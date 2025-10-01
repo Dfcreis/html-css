@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br'">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image:linear-gradient(to bottom, rgb(136, 243, 136), rgb(0, 119, 255), rgb(0, 25, 139));
+            background-attachment: fixed;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.39);
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 13px 0px;
+            box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.315);
+        }
+        footer{
+            color: white;
+            background-color: black;
+            text-align: center;
+            padding: 4px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.315);
+        }
+        article{
+        background-color: lightgray;
+        padding: 5px;
+        
+        }
+        article > aside{
+            background-color: rgb(134, 132, 132);
+        }
+        nav{
+            background-color: rgb(92, 89, 89);
+            border-radius: 5px;
+        }
+        nav > a{
+            color: rgb(124, 233, 151);
+            text-decoration: none;
+            margin-right: 5px;
+            font-weight: bold;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        #bola{
+            background-image: radial-gradient(rgb(255, 0, 0),rgba(134, 4, 241, 0.897) ,rgb(106, 178, 236));
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            border-radius: 50%;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">links</a>
+            <a href="#">links</a>
+            <a href="#">links</a>
+            <a href="#">links</a>
+            <a href="#">links</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure voluptatem fugit nam doloribus magnam labore sunt perferendis quod fuga veritatis quae nulla reiciendis unde et nostrum, dolore quisquam officiis vel!</p>
+                <aside>
+                    <p>artigo escrito por Daniel</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy;Desenvolvido por Daniel</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

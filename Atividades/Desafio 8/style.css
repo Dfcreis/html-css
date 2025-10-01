@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(39, 39, 39);
+    color: white;}
+h1{
+    text-align: center;
+}
+.videos {
+    width: 60%;
+   margin: 0 auto;
+}

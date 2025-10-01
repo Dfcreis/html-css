@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias</title>
+</head>
+<body>
+    <h1>imagens dinamicas</h1>
+    <p>tente abri este site em diferentes dispositivos e veja como se comporta</p>
+    <picture>
+        
+        <source media="(max-width: 750px )" srcset="imagem/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagem/foto-m.png" type="image/png">
+        <img src="imagem/foto-g.png" alt="imagem dinamica">
+    </picture>
+    <h1>Vamos aprender a reproduzir audio em html 5</h1>
+    <audio src="midia/Musica-1.mp3" controls ></audio>
+    <audio preload="none" controls > <source src="midia/Musica-1.mp3" type="audio/mpeg"></audio>
+    <h1>aprendendo a adicionar video em HTML</h1>
+    <video width ="500" controls poster="imagem/foto-v.png">
+        <source src="midia/Meu-Video.mp4" type="video/mp4">
+        <source src="midia/Meu-Video.webm" type="video/webm">
+        <p>navegador nao tem compaibilidade com video</p>
+    </video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/iCSUIAqBeEM?si=9W6KAdefNCYWuCjp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+        color: rgb(179, 13, 13);
+        text-decoration: none;
+        font-weight: bold;
+        }
+        a:visited{
+            color: rgb(158, 15, 15);
+        }
+        a:hover{
+         text-decoration: underline;
+         color: rgb(39, 187, 25);
+        }
+        a:active{
+            color: rgb(182, 182, 16);
+        }
+        a::before{
+            content: "[link]";
+        }
+        a::after{
+            content:"[link]";
+        }
+        .especial{
+            background-color: rgba(4, 121, 189, 0.61);
+            width: 200px;
+        }
+        input:required{
+            border:1px solid rgb(255, 2, 2);
+        }
+        button:disabled{
+            background: rgb(255, 9, 9);
+        }
+    </style>
+</head>
+<body>
+    <!--
+
+    simbolos para usar em css
+    
+    . = class
+    # = id
+    :pseudo class
+    :: pseudo lements
+    > filho
+
+    -->
+    <h1>personalisando links</h1>
+    <ul>
+            <li class="especial"><a href="https://www.instagram.com/dfcreis/"target="_blank">instagram</a></li>
+        <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo"target="_blank">
+            <li>canal do youtube</li>
+        </a>
+        <a href="https://www.cursoemvideo.com/" target="_blank">
+            <li>site do cursoemvideo</li>
+        </a>
+    </ul>
+    <input type="text">
+    <button>botao</button>
+    
+</body>
+</html>
